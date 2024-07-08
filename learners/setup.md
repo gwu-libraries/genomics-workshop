@@ -17,23 +17,19 @@ Please follow the instructions below to prepare your computer for the workshop:
 
 ## Required additional software
 
-This lesson requires a working spreadsheet program.
-If you don't have a spreadsheet program already, you can use LibreOffice.
-It's a free, open source spreadsheet program.
-Directions to install are included for each Windows, Mac OS X, and Linux systems below.
-For Windows, you will also need to install either Git Bash, PuTTY, or the Ubuntu Subsystem.
+- This lesson requires a working spreadsheet program.  **If you don't have a spreadsheet program already**, you can use LibreOffice, which is a free, open source spreadsheet program.  Directions to install are included for Windows, Mac OS X, and Linux systems below.  
+- For Windows, you will also need to install either Git Bash, PuTTY, or the Ubuntu Subsystem.  Instructions are below.
 
 :::::::::::::::: spoiler
 
 ## Windows
 
-- Visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
+- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
   The version for Windows should automatically be selected.
   Click Download Version X.X.X (whichever is the most recent version).
   You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.
-- Once the installer is downloaded, double click on it and LibreOffice should install.
-- Download the [Git for Windows installer](https://git-for-windows.github.io/).
+  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
+- Next, download the [Git for Windows installer](https://git-for-windows.github.io/).
   Run the installer and follow the steps below:
   - Click on "Next" four times (two times if you've previously installed Git).
     You don't need to change anything in the Information, location, components, and start menu screens.
@@ -78,12 +74,11 @@ For Windows, you will also need to install either Git Bash, PuTTY, or the Ubuntu
 
 ## Mac OS X
 
-- Visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
+- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
   The version for Mac should automatically be selected.
   Click Download Version X.X.X (whichever is the most recent version).
   You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.
-- Once the installer is downloaded, double click on it and LibreOffice should install.
+  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
 
 :::::::::::::::::::::::::
 
@@ -91,12 +86,10 @@ For Windows, you will also need to install either Git Bash, PuTTY, or the Ubuntu
 
 ## Linux
 
-- Visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
-  The version for Linux should automatically be selected.
+- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).  The version for Linux should automatically be selected.
   Click Download Version X.X.X (whichever is the most recent version).
   You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.
-- Once the installer is downloaded, double click on it and LibreOffice should install.
+  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
 
 :::::::::::::::::::::::::
 
