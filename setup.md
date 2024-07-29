@@ -5,31 +5,22 @@ title: Setup
 # Overview
 
 This workshop is designed to be run on pre-imaged Amazon Web Services (AWS) instances.
-All of the data and most of the software used in the workshop are hosted on an
-Amazon Machine Image (AMI).
-Some additional software, detailed below, must be installed on your computer.
+We will be providing you with an AWS instance.  To access your AWS instance, some additional software, detailed below, may need to be installed on your computer.
 
-Please follow the instructions below to prepare your computer for the workshop:
-
-- Required additional software + Option A
-  **OR**
-- Required additional software + Option B
 
 ## Required additional software
 
-- This lesson requires a working spreadsheet program.  **If you don't have a spreadsheet program already**, you can use LibreOffice, which is a free, open source spreadsheet program.  Directions to install are included for Windows, Mac OS X, and Linux systems below.  
+- This lesson requires a working spreadsheet program.  If you have a working spreadsheet program installed on your computer, such as Microsoft Excel or [LibreOffice](https://www.libreoffice.org/) (a free, open source spreadsheet program), you can use that.  Otherwise, you can use Google Sheets.  Either option will work well for this workshop.  
 - For Windows, you will also need to install either Git Bash, PuTTY, or the Ubuntu Subsystem.  Instructions are below.
 
 :::::::::::::::: spoiler
 
-## Windows
+## Windows users only:  Setting up software you can use to connect to your cloud computer
 
-- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
-  The version for Windows should automatically be selected.
-  Click Download Version X.X.X (whichever is the most recent version).
-  You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
-- Next, download the [Git for Windows installer](https://git-for-windows.github.io/).
+Open your Command Prompt app by searching for "cmd".  At the command prompt, type `ssh`.  Confirm that this prints out the usage information for the `ssh` command.  If the result is "Command not found" then you have a few options:
+
+- Set up the Ubuntu Subsystem for Windows. This option is only available for Windows 10 - detailedinstructions are available at [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install).
+- Download the [Git for Windows installer](https://git-for-windows.github.io/).
   Run the installer and follow the steps below:
   - Click on "Next" four times (two times if you've previously installed Git).
     You don't need to change anything in the Information, location, components, and start menu screens.
@@ -53,78 +44,15 @@ Please follow the instructions below to prepare your computer for the workshop:
   - Click on "Install".
   - Click on "Finish".
   - Check the settings for you your "HOME" environment variable.
-    - If your "HOME" environment variable is not set (or you don't know what this is):
-    - Open command prompt (Open Start Menu then type `cmd` and press [Enter])
-    - Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
-    - Press [Enter], you should see `SUCCESS: Specified value was saved.`
-    - Quit command prompt by typing `exit` then pressing [Enter]
-- An **alternative option** is to [install PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
-  For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version.
-  If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi.
-  If you aren't sure whether you need the 64 or 32 bit version,
-  you can [check your laptop version](https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq).
-  Once the installer is downloaded, double click on it, and PuTTY should install.
-- **Another alternative option** is to use the Ubuntu Subsystem for Windows.
-  This option is only available for Windows 10 - the Microsoft documentation provides
-  [detailed instructions for installing Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+  - If your "HOME" environment variable is not set (or you don't know what this is):
+  - Open command prompt (Open Start Menu then type `cmd` and press [Enter])
+  - Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
+  - Press [Enter], you should see `SUCCESS: Specified value was saved.`
+  - Quit command prompt by typing `exit` then pressing [Enter]
+- Another option is to install the MobaXterm desktop app.  Please follow the download instructions at [mobaxterm.mobatek.net](https://mobaxterm.mobatek.net/){:target="\_blank"} to download the free edition.
 
 :::::::::::::::::::::::::
 
-:::::::::::::::: spoiler
-
-## Mac OS X
-
-- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).
-  The version for Mac should automatically be selected.
-  Click Download Version X.X.X (whichever is the most recent version).
-  You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
-
-:::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-## Linux
-
-- **If you already have a spreadsheet program such as Microsoft Excel, you can skip this step.** If you *don't* have a spreadsheet program, visit [the LibreOffice installation page](https://www.libreoffice.org/download/libreoffice-fresh/).  The version for Linux should automatically be selected.
-  Click Download Version X.X.X (whichever is the most recent version).
-  You will go to a page that asks about a donation, but you don't need to make one.
-  Your download should begin automatically.  Once the installer is downloaded, double click on it and LibreOffice should install.
-
-:::::::::::::::::::::::::
-
-## Option A (**Recommended**): Using the lessons with Amazon Web Services (AWS)
-
-If you are signed up to take a Genomics Data Carpentry workshop,
-you do *not* need to worry about setting up an AMI instance.
-The Carpentries staff will create an instance for you and this will be provided to you at no cost.
-This is true for both self-organized and centrally-organized workshops.
-Your Instructor will provide instructions for connecting to the AMI instance at the workshop.
-
-If you would like to work through these lessons independently, outside of a workshop,
-you will need to start your own AMI instance.
-Follow these [instructions on creating an Amazon instance](https://datacarpentry.org/genomics-workshop/AMI-setup).
-Use the AMI `ami-04dd77cd58b3ec654` (Data Carpentry Genomics with R 4.2)
-listed on the Community AMIs page.
-Please note that you must set your location as `N. Virginia` in order to access this community AMI.
-You can change your location in the upper right corner of the main AWS menu bar.
-The cost of using this AMI for a few days,
-with the t2.medium instance type is very low (about USD $1.50 per user, per day).
-Data Carpentry has *no* control over AWS pricing structure and provides this
-cost estimate with no guarantees.
-Please read AWS documentation on pricing for up-to-date information.
-
-If you're an Instructor or Maintainer or want to contribute to these lessons,
-please [get in touch with us](mailto:team@carpentries.org)
-and we will start instances for you.
-
-## Option B: Using the lessons on your local machine
-
-While not recommended, it is possible to work through the lessons on your local machine
-(i.e. without using AWS).
-To do this, you will need to install all of the software used in the workshop
-and obtain a copy of the dataset.
-Instructions for doing this are listed below.
 
 ### Data
 
